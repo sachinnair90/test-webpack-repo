@@ -1,0 +1,217 @@
+{
+  "rulesDirectory": [
+    "node_modules/tslint-microsoft-contrib",
+    "node_modules/tslint-consistent-codestyle",
+    "node_modules/tslint-eslint-rules",
+    "node_modules/vrsource-tslint-rules/rules"
+  ],
+  "rules": {
+    "arrow-return-shorthand": true,
+    "callable-types": true,
+    "class-name": true,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "curly": true,
+    "eofline": true,
+    "forin": true,
+    "import-blacklist": [
+      true,
+      "rxjs"
+    ],
+    "import-spacing": true,
+    "indent": [
+      true,
+      "spaces",
+      4
+    ],
+    "interface-over-type-literal": true,
+    "label-position": true,
+    "max-line-length": [
+      true,
+      140
+    ],
+    "member-access": true,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "static-method",
+          "instance-method"
+        ]
+      }
+    ],
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-construct": true,
+    "no-debugger": true,
+    "no-duplicate-super": true,
+    "no-empty": false,
+    "no-empty-interface": true,
+    "no-eval": true,
+    "no-inferrable-types": [
+      true,
+      "ignore-params"
+    ],
+    "no-misused-new": true,
+    "no-non-null-assertion": true,
+    "no-shadowed-variable": true,
+    "no-string-literal": false,
+    "no-string-throw": true,
+    "no-switch-case-fall-through": true,
+    "no-trailing-whitespace": true,
+    "no-unnecessary-initializer": true,
+    "no-unused-expression": true,
+    "no-use-before-declare": true,
+    "no-var-keyword": true,
+    "object-literal-sort-keys": false,
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-whitespace"
+    ],
+    "one-variable-per-declaration": true,
+    "prefer-const": true,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "radix": true,
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "typeof-compare": true,
+    "unified-signatures": true,
+    "variable-name": false,
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
+    "directive-selector": [
+      true,
+      "attribute",
+      "clv",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "clv",
+      "kebab-case"
+    ],
+    "use-input-property-decorator": true,
+    "use-output-property-decorator": true,
+    "use-host-property-decorator": true,
+    "no-input-rename": true,
+    "no-output-rename": true,
+    "use-life-cycle-interface": true,
+    "use-pipe-transform-interface": true,
+    "component-class-suffix": true,
+    "directive-class-suffix": true,
+    "invoke-injectable": true,
+
+    // vr source rules
+    "ext-variable-name": [
+      true,
+      ["class",                 "pascal"],
+      ["interface",             "pascal", {"regex": "^I.*$"}],
+      ["parameter",             "camel"],
+      ["property", "static",    "camel", {"regex": "^s.*$"}],
+      ["property", "private",   "camel", "require-leading-underscore"],
+      ["property", "protected", "camel", "allow-leading-underscore"],
+      ["variable", "local",     "snake"],
+      ["variable", "const",     "upper"],
+      ["variable",              "camel", {"regex": "^g.*$"}],
+      ["method", "private",     "camel", "require-leading-underscore"],
+      ["method", "protected",   "camel", "allow-leading-underscore"],
+      ["function",              "camel"],
+      ["default",               "camel"]
+   ],
+   "literal-spacing": [
+      true,
+      {
+          "array": ["always"],
+          "object": ["never"],
+          "import": ["always"]
+      }
+    ],
+    "multiline-arrow": [
+        true,
+        "require-parens",
+        "require-block"
+    ],
+    "no-param-reassign": true,
+
+    // tslint-eslint rules
+    "no-constant-condition": true,
+    "no-extra-boolean-cast": true,
+    "no-extra-semi": true,
+    "no-inner-declarations": [
+      true,
+      "both"
+    ],
+    "ter-no-irregular-whitespace": [true],
+    "no-unexpected-multiline": true,
+    "no-multi-spaces": [true],
+    "brace-style": [
+      true,
+      "stroustrup",
+      {
+        "allowSingleLine": true
+      }
+    ],
+
+    // tslint-consistent codestyle rules
+    "early-exit": [true, { "max-length": 6 }],
+    "no-collapsible-if": true,
+    "no-unnecessary-else": true,
+    "no-return-undefined": true,
+    "no-var-before-return": true,
+    "object-shorthand-properties-first": true,
+
+    // tslint-microsoft-contrib rules
+    "max-func-body-length": true,
+    "no-empty-interfaces": true,
+    "no-for-in": true,
+    "no-stateless-class": true,
+    "no-typeof-undefined": true,
+    "no-unnecessary-bind": true,
+    "no-unnecessary-field-initialization": true,
+    "no-unnecessary-local-variable": true,
+    "no-unnecessary-override": true,
+    "no-useless-files": true,
+    
+  }
+}

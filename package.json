@@ -1,21 +1,12 @@
 {
-  "name": "calvi.localization.app",
+  "name": "app",
   "version": "1.0.0",
-  "description": "Centralized Localization Repository for Calvi Applications",
+  "description": "App",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --port=4200",
     "build": "webpack"
   },
-  "keywords": [
-    "angular",
-    "webpack",
-    "typescript",
-    "scss",
-    "localization",
-    "calvi"
-  ],
-  "author": "Calvi",
   "dependencies": {
     "@types/angular-animate": "1.5.8",
     "@types/angular-material": "1.1.54",
